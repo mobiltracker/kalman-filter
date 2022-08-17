@@ -2,6 +2,11 @@ use nalgebra::{Matrix1, Matrix2, Matrix2x4, Matrix4, Matrix4x2, SMatrix, SVector
 
 const DIMENSIONS: usize = 4;
 const UNCERTAINTY_INCREASE: f32 = 1f32;
+const EPSILON_THRESHOLD: f32 = 5f32;
+pub const ACCELERATION_STD_DEFAULT: f32 = 0.000001f32;
+pub const POSITION_STD_DEFAULT: f32 = 0.0001f32;
+pub const INITIAL_UNCERTAINTY_DEFAULT: f32 = 0.0001f32;
+pub const TIME_STEP_DEFAULT: f32 = 1f32;
 
 pub struct KalmanFilter {
     state: SVector<f32, DIMENSIONS>,
@@ -55,7 +60,7 @@ impl KalmanFilter {
 
         let epsilon = residual.transpose() * inovation_covariance * residual;
 
-        if epsilon > Matrix1::from([5f32]) {
+        if epsilon > Matrix1::from([EPSILON_THRESHOLD]) {
             self.covariance *= UNCERTAINTY_INCREASE;
             self.count += 1;
         } else if self.count > 0 {
