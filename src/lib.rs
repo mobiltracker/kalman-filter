@@ -56,7 +56,7 @@ impl KalmanFilter {
 
         self.state += kalman_gain * residual;
         let identity = Matrix4::<f32>::identity();
-        self.covariance = identity - kalman_gain * observation_model * self.covariance;
+        self.covariance = (identity - kalman_gain * observation_model) * self.covariance;
 
         let epsilon = residual.transpose() * inovation_covariance * residual;
 
