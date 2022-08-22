@@ -1,7 +1,7 @@
 use nalgebra::{Matrix1, Matrix2, Matrix2x4, Matrix4, Matrix4x2, SMatrix, SVector};
 
 const DIMENSIONS: usize = 4;
-const UNCERTAINTY_INCREASE: f32 = 1f32;
+const UNCERTAINTY_INCREASE_DEFAULT: f32 = 1f32;
 const EPSILON_THRESHOLD: f32 = 5f32;
 pub const ACCELERATION_STD_DEFAULT: f32 = 0.000001f32;
 pub const POSITION_STD_DEFAULT: f32 = 0.0001f32;
@@ -11,6 +11,7 @@ pub const TIME_STEP_DEFAULT: f32 = 1f32;
 pub struct KalmanFilter {
     state: SVector<f32, DIMENSIONS>,
     covariance: SMatrix<f32, DIMENSIONS, DIMENSIONS>,
+    uncertainty_increase_mult: f32,
     count: u32,
 }
 
@@ -23,13 +24,20 @@ pub struct KalmanState {
 }
 
 impl KalmanFilter {
-    pub fn new(coordinate: geo::Coordinate<f32>, uncertainty: f32) -> Self {
+    pub fn new(
+        coordinate: geo::Coordinate<f32>,
+        uncertainty: f32,
+        uncertainty_increase: Option<f32>,
+    ) -> Self {
         let state = SVector::from([coordinate.x, coordinate.y, 0f32, 0f32]);
         let covariance = Matrix4::from_diagonal_element(uncertainty);
+        let uncertainty_increase_mult =
+            uncertainty_increase.unwrap_or(UNCERTAINTY_INCREASE_DEFAULT);
 
         Self {
             state,
             covariance,
+            uncertainty_increase_mult,
             count: 0,
         }
     }
@@ -61,10 +69,10 @@ impl KalmanFilter {
         let epsilon = residual.transpose() * inovation_covariance * residual;
 
         if epsilon > Matrix1::from([EPSILON_THRESHOLD]) {
-            self.covariance *= UNCERTAINTY_INCREASE;
+            self.covariance *= self.uncertainty_increase_mult;
             self.count += 1;
         } else if self.count > 0 {
-            self.covariance /= UNCERTAINTY_INCREASE;
+            self.covariance /= self.uncertainty_increase_mult;
             self.count -= 1;
         }
     }
