@@ -8,11 +8,49 @@ pub const POSITION_STD_DEFAULT: f32 = 0.0001f32;
 pub const INITIAL_UNCERTAINTY_DEFAULT: f32 = 0.0001f32;
 pub const TIME_STEP_DEFAULT: f32 = 1f32;
 
+pub struct KalmanFilterBuilder {
+    uncertainty_increase_multiplier: Option<f32>,
+    epsilon_threshold: Option<f32>,
+    coordinate: geo::Coordinate<f32>,
+    initial_uncertainty: f32,
+}
+
+impl KalmanFilterBuilder {
+    pub fn uncertainty_increase_multiplier(self, value: f32) -> Self {
+        Self {
+            uncertainty_increase_multiplier: Some(value),
+            ..self
+        }
+    }
+
+    pub fn epsilon_threshold(self, value: f32) -> Self {
+        Self {
+            epsilon_threshold: Some(value),
+            ..self
+        }
+    }
+
+    pub fn build(self) -> KalmanFilter {
+        let state = SVector::from([self.coordinate.x, self.coordinate.y, 0f32, 0f32]);
+        let covariance = Matrix4::from_diagonal_element(self.initial_uncertainty);
+
+        KalmanFilter {
+            state,
+            covariance,
+            uncertainty_increase_mult: self
+                .uncertainty_increase_multiplier
+                .unwrap_or(UNCERTAINTY_INCREASE_DEFAULT),
+            epsilon_threshold: self.epsilon_threshold.unwrap_or(EPSILON_THRESHOLD_DEFAULT),
+            count: 0,
+        }
+    }
+}
+
 pub struct KalmanFilter {
     state: SVector<f32, DIMENSIONS>,
     covariance: SMatrix<f32, DIMENSIONS, DIMENSIONS>,
-    uncertainty_increase_mult: Option<f32>,
-    epsilon_threshold: Option<f32>,
+    uncertainty_increase_mult: f32,
+    epsilon_threshold: f32,
     count: u32,
 }
 
@@ -25,16 +63,15 @@ pub struct KalmanState {
 }
 
 impl KalmanFilter {
-    pub fn new(coordinate: geo::Coordinate<f32>, initial_uncertainty: f32) -> Self {
-        let state = SVector::from([coordinate.x, coordinate.y, 0f32, 0f32]);
-        let covariance = Matrix4::from_diagonal_element(initial_uncertainty);
-
-        Self {
-            state,
-            covariance,
-            uncertainty_increase_mult: None,
+    pub fn builder(
+        coordinate: geo::Coordinate<f32>,
+        initial_uncertainty: f32,
+    ) -> KalmanFilterBuilder {
+        KalmanFilterBuilder {
+            coordinate,
+            initial_uncertainty,
             epsilon_threshold: None,
-            count: 0,
+            uncertainty_increase_multiplier: None,
         }
     }
 
@@ -64,16 +101,11 @@ impl KalmanFilter {
 
         let epsilon = residual.transpose() * inovation_covariance * residual;
 
-        let multiplier = self
-            .uncertainty_increase_mult
-            .unwrap_or(UNCERTAINTY_INCREASE_DEFAULT);
-        let threshold = self.epsilon_threshold.unwrap_or(EPSILON_THRESHOLD_DEFAULT);
-
-        if epsilon.x > threshold {
-            self.covariance *= multiplier;
+        if epsilon.x > self.epsilon_threshold {
+            self.covariance *= self.uncertainty_increase_mult;
             self.count += 1;
         } else if self.count > 0 {
-            self.covariance /= multiplier;
+            self.covariance /= self.uncertainty_increase_mult;
             self.count -= 1;
         }
     }
@@ -112,17 +144,5 @@ impl KalmanFilter {
             lon_speed: self.state[2],
             lat_speed: self.state[3],
         }
-    }
-
-    pub fn uncertainty_inc_multiplier(self, value: f32) -> Self {
-        let mut new = self;
-        new.uncertainty_increase_mult = Some(value);
-        new
-    }
-
-    pub fn epsilon_threshold(self, value: f32) -> Self {
-        let mut new = self;
-        new.epsilon_threshold = Some(value);
-        new
     }
 }
