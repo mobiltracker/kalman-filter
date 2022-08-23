@@ -1,8 +1,8 @@
-use nalgebra::{Matrix1, Matrix2, Matrix2x4, Matrix4, Matrix4x2, SMatrix, SVector};
+use nalgebra::{Matrix2, Matrix2x4, Matrix4, Matrix4x2, SMatrix, SVector};
 
 const DIMENSIONS: usize = 4;
 const UNCERTAINTY_INCREASE_DEFAULT: f32 = 1f32;
-const EPSILON_THRESHOLD: f32 = 5f32;
+const EPSILON_THRESHOLD_DEFAULT: f32 = 0.0000009f32;
 pub const ACCELERATION_STD_DEFAULT: f32 = 0.000001f32;
 pub const POSITION_STD_DEFAULT: f32 = 0.0001f32;
 pub const INITIAL_UNCERTAINTY_DEFAULT: f32 = 0.0001f32;
@@ -11,7 +11,8 @@ pub const TIME_STEP_DEFAULT: f32 = 1f32;
 pub struct KalmanFilter {
     state: SVector<f32, DIMENSIONS>,
     covariance: SMatrix<f32, DIMENSIONS, DIMENSIONS>,
-    uncertainty_increase_mult: f32,
+    uncertainty_increase_mult: Option<f32>,
+    epsilon_threshold: Option<f32>,
     count: u32,
 }
 
@@ -24,20 +25,15 @@ pub struct KalmanState {
 }
 
 impl KalmanFilter {
-    pub fn new(
-        coordinate: geo::Coordinate<f32>,
-        uncertainty: f32,
-        uncertainty_increase: Option<f32>,
-    ) -> Self {
+    pub fn new(coordinate: geo::Coordinate<f32>, initial_uncertainty: f32) -> Self {
         let state = SVector::from([coordinate.x, coordinate.y, 0f32, 0f32]);
-        let covariance = Matrix4::from_diagonal_element(uncertainty);
-        let uncertainty_increase_mult =
-            uncertainty_increase.unwrap_or(UNCERTAINTY_INCREASE_DEFAULT);
+        let covariance = Matrix4::from_diagonal_element(initial_uncertainty);
 
         Self {
             state,
             covariance,
-            uncertainty_increase_mult,
+            uncertainty_increase_mult: None,
+            epsilon_threshold: None,
             count: 0,
         }
     }
@@ -68,11 +64,16 @@ impl KalmanFilter {
 
         let epsilon = residual.transpose() * inovation_covariance * residual;
 
-        if epsilon > Matrix1::from([EPSILON_THRESHOLD]) {
-            self.covariance *= self.uncertainty_increase_mult;
+        let multiplier = self
+            .uncertainty_increase_mult
+            .unwrap_or(UNCERTAINTY_INCREASE_DEFAULT);
+        let threshold = self.epsilon_threshold.unwrap_or(EPSILON_THRESHOLD_DEFAULT);
+
+        if epsilon.x > threshold {
+            self.covariance *= multiplier;
             self.count += 1;
         } else if self.count > 0 {
-            self.covariance /= self.uncertainty_increase_mult;
+            self.covariance /= multiplier;
             self.count -= 1;
         }
     }
@@ -111,5 +112,17 @@ impl KalmanFilter {
             lon_speed: self.state[2],
             lat_speed: self.state[3],
         }
+    }
+
+    pub fn uncertainty_inc_multiplier(self, value: f32) -> Self {
+        let mut new = self;
+        new.uncertainty_increase_mult = Some(value);
+        new
+    }
+
+    pub fn epsilon_threshold(self, value: f32) -> Self {
+        let mut new = self;
+        new.epsilon_threshold = Some(value);
+        new
     }
 }
