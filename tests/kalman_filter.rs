@@ -22,13 +22,10 @@ fn kalman_filter(coordinates: KalmanCoordinates) {
     .uncertainty_increase_multiplier(10000f32)
     .build();
 
-    let mut count = 0;
     for coordinate in coordinates[1..].into_iter() {
-        count += 1;
         let elapsed_time = coordinate.received_time - last_time;
         last_time = coordinate.received_time;
         kalman_filter.predict(elapsed_time.num_seconds() as f32, acc_std);
-        print!("{count} - {:#} - ", coordinate.received_time);
 
         let coordinate = geo::Coordinate {
             x: coordinate.lon as f32,
