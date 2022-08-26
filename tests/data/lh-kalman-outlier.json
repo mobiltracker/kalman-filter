@@ -1,635 +1,6 @@
 [
   {
-    "receivedTime": "2022-08-23T15:00:39Z",
-    "serverTime": "2022-08-23T15:00:41Z",
-    "collectedTime": "2022-08-23T15:00:39Z",
-    "trackerId": 243197,
-    "accuracy": 19.46500015258789,
-    "lat": -10.945095,
-    "lon": -37.6656027,
-    "speed": 0.0,
-    "event": "",
-    "accStatus": null,
-    "battery": 41,
-    "imei": "351837111814844",
-    "alarmType": null,
-    "kalmanInfo": {
-      "latitude": -10.94509506225586,
-      "longitude": -37.66560363769531,
-      "latSpeed": 0.0,
-      "lonSpeed": 0.0
-    }
-  },
-  {
-    "receivedTime": "2022-08-23T15:03:00Z",
-    "serverTime": "2022-08-23T15:03:02Z",
-    "collectedTime": "2022-08-23T15:03:00Z",
-    "trackerId": 243197,
-    "accuracy": 33.64400100708008,
-    "lat": -10.9449499,
-    "lon": -37.6655315,
-    "speed": 0.0,
-    "event": "",
-    "accStatus": null,
-    "battery": 41,
-    "imei": "351837111814844",
-    "alarmType": null,
-    "kalmanInfo": {
-      "latitude": -10.944950103759766,
-      "longitude": -37.665531158447266,
-      "latSpeed": 0.0000020358702,
-      "lonSpeed": 0.0000010179351
-    }
-  },
-  {
-    "receivedTime": "2022-08-23T15:04:26Z",
-    "serverTime": "2022-08-23T15:04:27Z",
-    "collectedTime": "2022-08-23T15:04:26Z",
-    "trackerId": 243197,
-    "accuracy": 20.0,
-    "lat": -10.945094,
-    "lon": -37.6656206,
-    "speed": 0.0,
-    "event": "",
-    "accStatus": null,
-    "battery": 41,
-    "imei": "351837111814844",
-    "alarmType": null,
-    "kalmanInfo": {
-      "latitude": -10.945094108581543,
-      "longitude": -37.665618896484375,
-      "latSpeed": -0.000005206849,
-      "lonSpeed": -0.0000029601551
-    }
-  },
-  {
-    "receivedTime": "2022-08-23T15:07:01Z",
-    "serverTime": "2022-08-23T15:07:02Z",
-    "collectedTime": "2022-08-23T15:07:01Z",
-    "trackerId": 243197,
-    "accuracy": 23.27899932861328,
-    "lat": -10.9450982,
-    "lon": -37.6656053,
-    "speed": 0.0,
-    "event": "",
-    "accStatus": null,
-    "battery": 41,
-    "imei": "351837111814844",
-    "alarmType": null,
-    "kalmanInfo": {
-      "latitude": -10.945097923278809,
-      "longitude": -37.66560363769531,
-      "latSpeed": 0.0000050752788,
-      "lonSpeed": 0.000003096775
-    }
-  },
-  {
-    "receivedTime": "2022-08-23T15:08:01Z",
-    "serverTime": "2022-08-23T15:08:02Z",
-    "collectedTime": "2022-08-23T15:08:01Z",
-    "trackerId": 243197,
-    "accuracy": 27.8439998626709,
-    "lat": -10.9449968,
-    "lon": -37.665605,
-    "speed": 0.0,
-    "event": "",
-    "accStatus": null,
-    "battery": 41,
-    "imei": "351837111814844",
-    "alarmType": null,
-    "kalmanInfo": {
-      "latitude": -10.94499683380127,
-      "longitude": -37.66560363769531,
-      "latSpeed": -0.000001382803,
-      "lonSpeed": -0.000002845873
-    }
-  },
-  {
-    "receivedTime": "2022-08-23T15:10:27Z",
-    "serverTime": "2022-08-23T15:10:29Z",
-    "collectedTime": "2022-08-23T15:10:27Z",
-    "trackerId": 243197,
-    "accuracy": 33.58300018310547,
-    "lat": -10.944981,
-    "lon": -37.6655652,
-    "speed": 0.0,
-    "event": "",
-    "accStatus": null,
-    "battery": 42,
-    "imei": "351837111814844",
-    "alarmType": null,
-    "kalmanInfo": {
-      "latitude": -10.94498062133789,
-      "longitude": -37.665565490722656,
-      "latSpeed": 0.0000015858636,
-      "lonSpeed": 0.0000033248052
-    }
-  },
-  {
-    "receivedTime": "2022-08-23T15:13:22Z",
-    "serverTime": "2022-08-23T15:13:23Z",
-    "collectedTime": "2022-08-23T15:13:22Z",
-    "trackerId": 243197,
-    "accuracy": 42.91299819946289,
-    "lat": -10.9450615,
-    "lon": -37.6656691,
-    "speed": 0.0,
-    "event": "",
-    "accStatus": null,
-    "battery": 42,
-    "imei": "351837111814844",
-    "alarmType": null,
-    "kalmanInfo": {
-      "latitude": -10.945061683654785,
-      "longitude": -37.66566848754883,
-      "latSpeed": -0.0000024905166,
-      "lonSpeed": -0.0000044810295
-    }
-  },
-  {
-    "receivedTime": "2022-08-23T15:14:15Z",
-    "serverTime": "2022-08-23T15:14:16Z",
-    "collectedTime": "2022-08-23T15:14:15Z",
-    "trackerId": 243197,
-    "accuracy": 25.57900047302246,
-    "lat": -10.9450494,
-    "lon": -37.6656813,
-    "speed": 0.0,
-    "event": "",
-    "accStatus": null,
-    "battery": 42,
-    "imei": "351837111814844",
-    "alarmType": null,
-    "kalmanInfo": {
-      "latitude": -10.945049285888672,
-      "longitude": -37.665679931640625,
-      "latSpeed": 0.000002662447,
-      "lonSpeed": 0.0000035726089
-    }
-  },
-  {
-    "receivedTime": "2022-08-23T15:16:35Z",
-    "serverTime": "2022-08-23T15:16:36Z",
-    "collectedTime": "2022-08-23T15:16:35Z",
-    "trackerId": 243197,
-    "accuracy": 13.484000205993652,
-    "lat": -10.9450964,
-    "lon": -37.6656161,
-    "speed": 0.0,
-    "event": "",
-    "accStatus": null,
-    "battery": 43,
-    "imei": "351837111814844",
-    "alarmType": null,
-    "kalmanInfo": {
-      "latitude": -10.945096015930176,
-      "longitude": -37.66561508178711,
-      "latSpeed": -0.0000032882735,
-      "lonSpeed": -0.0000025945014
-    }
-  },
-  {
-    "receivedTime": "2022-08-23T15:17:23Z",
-    "serverTime": "2022-08-23T15:17:25Z",
-    "collectedTime": "2022-08-23T15:17:23Z",
-    "trackerId": 243197,
-    "accuracy": 48.018001556396484,
-    "lat": -10.9450667,
-    "lon": -37.6656502,
-    "speed": 0.0,
-    "event": "",
-    "accStatus": null,
-    "battery": 43,
-    "imei": "351837111814844",
-    "alarmType": null,
-    "kalmanInfo": {
-      "latitude": -10.945066452026367,
-      "longitude": -37.6656494140625,
-      "latSpeed": 0.0000041069975,
-      "lonSpeed": 0.0000010092854
-    }
-  },
-  {
-    "receivedTime": "2022-08-23T15:19:15Z",
-    "serverTime": "2022-08-23T15:19:18Z",
-    "collectedTime": "2022-08-23T15:19:15Z",
-    "trackerId": 243197,
-    "accuracy": 21.26799964904785,
-    "lat": -10.9450806,
-    "lon": -37.6656044,
-    "speed": 0.0,
-    "event": "",
-    "accStatus": null,
-    "battery": 43,
-    "imei": "351837111814844",
-    "alarmType": null,
-    "kalmanInfo": {
-      "latitude": -10.945080757141113,
-      "longitude": -37.66560363769531,
-      "latSpeed": -0.000004272621,
-      "lonSpeed": -2.0466337e-7
-    }
-  },
-  {
-    "receivedTime": "2022-08-23T15:21:36Z",
-    "serverTime": "2022-08-23T15:21:38Z",
-    "collectedTime": "2022-08-23T15:21:36Z",
-    "trackerId": 243197,
-    "accuracy": 23.04800033569336,
-    "lat": -10.9450495,
-    "lon": -37.6656804,
-    "speed": 0.0,
-    "event": "",
-    "accStatus": null,
-    "battery": 43,
-    "imei": "351837111814844",
-    "alarmType": null,
-    "kalmanInfo": {
-      "latitude": -10.945049285888672,
-      "longitude": -37.665679931640625,
-      "latSpeed": 0.000004667237,
-      "lonSpeed": -8.4994633e-7
-    }
-  },
-  {
-    "receivedTime": "2022-08-23T15:22:38Z",
-    "serverTime": "2022-08-23T15:22:40Z",
-    "collectedTime": "2022-08-23T15:22:38Z",
-    "trackerId": 243197,
-    "accuracy": 18.26799964904785,
-    "lat": -10.9450959,
-    "lon": -37.6656107,
-    "speed": 0.0,
-    "event": "",
-    "accStatus": null,
-    "battery": 43,
-    "imei": "351837111814844",
-    "alarmType": null,
-    "kalmanInfo": {
-      "latitude": -10.945096015930176,
-      "longitude": -37.665611267089844,
-      "latSpeed": -0.0000058351393,
-      "lonSpeed": 0.0000029690996
-    }
-  },
-  {
-    "receivedTime": "2022-08-23T15:25:02Z",
-    "serverTime": "2022-08-23T15:25:04Z",
-    "collectedTime": "2022-08-23T15:25:02Z",
-    "trackerId": 243197,
-    "accuracy": 22.29199981689453,
-    "lat": -10.9450994,
-    "lon": -37.6656118,
-    "speed": 0.0,
-    "event": "",
-    "accStatus": null,
-    "battery": 43,
-    "imei": "351837111814844",
-    "alarmType": null,
-    "kalmanInfo": {
-      "latitude": -10.945099830627441,
-      "longitude": -37.665611267089844,
-      "latSpeed": 0.000005716945,
-      "lonSpeed": -0.000002932079
-    }
-  },
-  {
-    "receivedTime": "2022-08-23T15:25:56Z",
-    "serverTime": "2022-08-23T15:25:59Z",
-    "collectedTime": "2022-08-23T15:25:56Z",
-    "trackerId": 243197,
-    "accuracy": 19.944000244140625,
-    "lat": -10.9450884,
-    "lon": -37.665605,
-    "speed": 0.6120746731758118,
-    "event": "",
-    "accStatus": null,
-    "battery": 43,
-    "imei": "351837111814844",
-    "alarmType": null,
-    "kalmanInfo": {
-      "latitude": -10.945088386535645,
-      "longitude": -37.66560363769531,
-      "latSpeed": -0.0000049017467,
-      "lonSpeed": 0.0000030579522
-    }
-  },
-  {
-    "receivedTime": "2022-08-23T15:28:16Z",
-    "serverTime": "2022-08-23T15:28:18Z",
-    "collectedTime": "2022-08-23T15:28:16Z",
-    "trackerId": 243197,
-    "accuracy": 20.0,
-    "lat": -10.9450974,
-    "lon": -37.6656166,
-    "speed": 0.0,
-    "event": "",
-    "accStatus": null,
-    "battery": 43,
-    "imei": "351837111814844",
-    "alarmType": null,
-    "kalmanInfo": {
-      "latitude": -10.945096969604492,
-      "longitude": -37.66561508178711,
-      "latSpeed": 0.00000473291,
-      "lonSpeed": -0.0000031754407
-    }
-  },
-  {
-    "receivedTime": "2022-08-23T15:30:08Z",
-    "serverTime": "2022-08-23T15:30:10Z",
-    "collectedTime": "2022-08-23T15:30:08Z",
-    "trackerId": 243197,
-    "accuracy": 22.975000381469727,
-    "lat": -10.9450984,
-    "lon": -37.6656049,
-    "speed": 0.0,
-    "event": "",
-    "accStatus": null,
-    "battery": 42,
-    "imei": "351837111814844",
-    "alarmType": null,
-    "kalmanInfo": {
-      "latitude": -10.945097923278809,
-      "longitude": -37.66560363769531,
-      "latSpeed": -0.0000046745704,
-      "lonSpeed": 0.000003310147
-    }
-  },
-  {
-    "receivedTime": "2022-08-23T15:32:40Z",
-    "serverTime": "2022-08-23T15:32:41Z",
-    "collectedTime": "2022-08-23T15:32:40Z",
-    "trackerId": 243197,
-    "accuracy": 20.402999877929688,
-    "lat": -10.9450966,
-    "lon": -37.6656045,
-    "speed": 0.0,
-    "event": "",
-    "accStatus": null,
-    "battery": 42,
-    "imei": "351837111814844",
-    "alarmType": null,
-    "kalmanInfo": {
-      "latitude": -10.945096969604492,
-      "longitude": -37.66560363769531,
-      "latSpeed": 0.0000046449836,
-      "lonSpeed": -0.0000032859984
-    }
-  },
-  {
-    "receivedTime": "2022-08-23T15:35:34Z",
-    "serverTime": "2022-08-23T15:35:36Z",
-    "collectedTime": "2022-08-23T15:35:34Z",
-    "trackerId": 243197,
-    "accuracy": 27.94099998474121,
-    "lat": -10.9450493,
-    "lon": -37.6656825,
-    "speed": 0.0,
-    "event": "",
-    "accStatus": null,
-    "battery": 42,
-    "imei": "351837111814844",
-    "alarmType": null,
-    "kalmanInfo": {
-      "latitude": -10.945049285888672,
-      "longitude": -37.66568374633789,
-      "latSpeed": -0.000004062183,
-      "lonSpeed": 0.000002351264
-    }
-  },
-  {
-    "receivedTime": "2022-08-23T15:37:45Z",
-    "serverTime": "2022-08-23T15:37:47Z",
-    "collectedTime": "2022-08-23T15:37:45Z",
-    "trackerId": 243197,
-    "accuracy": 32.250999450683594,
-    "lat": -10.9449825,
-    "lon": -37.6655759,
-    "speed": 0.0,
-    "event": "",
-    "accStatus": null,
-    "battery": 42,
-    "imei": "351837111814844",
-    "alarmType": null,
-    "kalmanInfo": {
-      "latitude": -10.944982528686523,
-      "longitude": -37.66557693481445,
-      "latSpeed": 0.0000050278627,
-      "lonSpeed": -7.173503e-7
-    }
-  },
-  {
-    "receivedTime": "2022-08-23T15:39:46Z",
-    "serverTime": "2022-08-23T15:39:48Z",
-    "collectedTime": "2022-08-23T15:39:46Z",
-    "trackerId": 243197,
-    "accuracy": 34.23099899291992,
-    "lat": -10.9449441,
-    "lon": -37.6655369,
-    "speed": 0.0,
-    "event": "",
-    "accStatus": null,
-    "battery": 43,
-    "imei": "351837111814844",
-    "alarmType": null,
-    "kalmanInfo": {
-      "latitude": -10.944944381713867,
-      "longitude": -37.6655387878418,
-      "latSpeed": -0.000004334676,
-      "lonSpeed": 0.000001349297
-    }
-  },
-  {
-    "receivedTime": "2022-08-23T15:42:06Z",
-    "serverTime": "2022-08-23T15:42:08Z",
-    "collectedTime": "2022-08-23T15:42:06Z",
-    "trackerId": 243197,
-    "accuracy": 28.242000579833984,
-    "lat": -10.9450192,
-    "lon": -37.6656274,
-    "speed": 0.0,
-    "event": "",
-    "accStatus": null,
-    "battery": 43,
-    "imei": "351837111814844",
-    "alarmType": null,
-    "kalmanInfo": {
-      "latitude": -10.945018768310547,
-      "longitude": -37.665626525878906,
-      "latSpeed": 0.0000032293833,
-      "lonSpeed": -0.0000026089563
-    }
-  },
-  {
-    "receivedTime": "2022-08-23T15:44:07Z",
-    "serverTime": "2022-08-23T15:44:08Z",
-    "collectedTime": "2022-08-23T15:44:07Z",
-    "trackerId": 243197,
-    "accuracy": 19.98200035095215,
-    "lat": -10.9450976,
-    "lon": -37.6656046,
-    "speed": 0.0,
-    "event": "",
-    "accStatus": null,
-    "battery": 43,
-    "imei": "351837111814844",
-    "alarmType": null,
-    "kalmanInfo": {
-      "latitude": -10.945097923278809,
-      "longitude": -37.66560363769531,
-      "latSpeed": -0.0000044904523,
-      "lonSpeed": 0.000002965611
-    }
-  },
-  {
-    "receivedTime": "2022-08-23T15:46:31Z",
-    "serverTime": "2022-08-23T15:46:33Z",
-    "collectedTime": "2022-08-23T15:46:31Z",
-    "trackerId": 243197,
-    "accuracy": 34.35300064086914,
-    "lat": -10.9449682,
-    "lon": -37.6655483,
-    "speed": 0.0,
-    "event": "",
-    "accStatus": null,
-    "battery": 44,
-    "imei": "351837111814844",
-    "alarmType": null,
-    "kalmanInfo": {
-      "latitude": -10.944968223571777,
-      "longitude": -37.66554641723633,
-      "latSpeed": 0.000006241458,
-      "lonSpeed": -0.0000021498452
-    }
-  },
-  {
-    "receivedTime": "2022-08-23T15:48:31Z",
-    "serverTime": "2022-08-23T15:48:33Z",
-    "collectedTime": "2022-08-23T15:48:31Z",
-    "trackerId": 243197,
-    "accuracy": 30.06800079345703,
-    "lat": -10.9450398,
-    "lon": -37.6656356,
-    "speed": 0.0,
-    "event": "",
-    "accStatus": null,
-    "battery": 44,
-    "imei": "351837111814844",
-    "alarmType": null,
-    "kalmanInfo": {
-      "latitude": -10.945039749145508,
-      "longitude": -37.66563415527344,
-      "latSpeed": -0.0000073379656,
-      "lonSpeed": 6.9235966e-7
-    }
-  },
-  {
-    "receivedTime": "2022-08-23T15:50:52Z",
-    "serverTime": "2022-08-23T15:50:54Z",
-    "collectedTime": "2022-08-23T15:50:52Z",
-    "trackerId": 243197,
-    "accuracy": 33.83300018310547,
-    "lat": -10.9449652,
-    "lon": -37.6655475,
-    "speed": 0.0,
-    "event": "",
-    "accStatus": null,
-    "battery": 44,
-    "imei": "351837111814844",
-    "alarmType": null,
-    "kalmanInfo": {
-      "latitude": -10.944965362548828,
-      "longitude": -37.66554641723633,
-      "latSpeed": 0.000008320043,
-      "lonSpeed": 5.307981e-7
-    }
-  },
-  {
-    "receivedTime": "2022-08-23T15:53:32Z",
-    "serverTime": "2022-08-23T15:53:33Z",
-    "collectedTime": "2022-08-23T15:53:32Z",
-    "trackerId": 243197,
-    "accuracy": 29.6299991607666,
-    "lat": -10.9450063,
-    "lon": -37.6655925,
-    "speed": 0.0,
-    "event": "",
-    "accStatus": null,
-    "battery": 45,
-    "imei": "351837111814844",
-    "alarmType": null,
-    "kalmanInfo": {
-      "latitude": -10.945006370544434,
-      "longitude": -37.665592193603516,
-      "latSpeed": -0.000008771771,
-      "lonSpeed": -0.0000010845504
-    }
-  },
-  {
-    "receivedTime": "2022-08-23T15:55:01Z",
-    "serverTime": "2022-08-23T15:55:02Z",
-    "collectedTime": "2022-08-23T15:55:01Z",
-    "trackerId": 243197,
-    "accuracy": 22.5,
-    "lat": -10.9451715,
-    "lon": -37.6655871,
-    "speed": 0.0,
-    "event": "",
-    "accStatus": null,
-    "battery": 45,
-    "imei": "351837111814844",
-    "alarmType": null,
-    "kalmanInfo": {
-      "latitude": -10.945171356201172,
-      "longitude": -37.66558837890625,
-      "latSpeed": 0.000004913567,
-      "lonSpeed": 0.0000011186619
-    }
-  },
-  {
-    "receivedTime": "2022-08-23T15:57:21Z",
-    "serverTime": "2022-08-23T15:57:22Z",
-    "collectedTime": "2022-08-23T15:57:21Z",
-    "trackerId": 243197,
-    "accuracy": 33.73699951171875,
-    "lat": -10.9449558,
-    "lon": -37.6655472,
-    "speed": 0.0,
-    "event": "",
-    "accStatus": null,
-    "battery": 45,
-    "imei": "351837111814844",
-    "alarmType": null,
-    "kalmanInfo": {
-      "latitude": -10.944955825805664,
-      "longitude": -37.66554641723633,
-      "latSpeed": -0.000001799257,
-      "lonSpeed": -5.0868937e-7
-    }
-  },
-  {
-    "receivedTime": "2022-08-23T15:59:21Z",
-    "serverTime": "2022-08-23T15:59:22Z",
-    "collectedTime": "2022-08-23T15:59:21Z",
-    "trackerId": 243197,
-    "accuracy": 31.413000106811523,
-    "lat": -10.9449125,
-    "lon": -37.6655171,
-    "speed": 0.0,
-    "event": "",
-    "accStatus": null,
-    "battery": 46,
-    "imei": "351837111814844",
-    "alarmType": null,
-    "kalmanInfo": {
-      "latitude": -10.944912910461426,
-      "longitude": -37.6655158996582,
-      "latSpeed": 0.0000024815413,
-      "lonSpeed": 0.0000010077557
-    }
-  },
-  {
+    "_comment": "TK 243197 - From 23/08/2022 - Hour range: 13h to 14h local time",
     "receivedTime": "2022-08-23T16:02:24Z",
     "serverTime": "2022-08-23T16:02:26Z",
     "collectedTime": "2022-08-23T16:02:24Z",
@@ -646,8 +17,8 @@
     "kalmanInfo": {
       "latitude": -10.94493579864502,
       "longitude": -37.66551971435547,
-      "latSpeed": -0.0000027160136,
-      "lonSpeed": -0.0000010296857
+      "latSpeed": 0.0,
+      "lonSpeed": 0.0
     }
   },
   {
@@ -667,8 +38,8 @@
     "kalmanInfo": {
       "latitude": -10.944950103759766,
       "longitude": -37.6655387878418,
-      "latSpeed": 0.0000025466388,
-      "lonSpeed": 8.3020757e-7
+      "latSpeed": -1.5884774e-7,
+      "lonSpeed": -2.1179699e-7
     }
   },
   {
@@ -688,8 +59,8 @@
     "kalmanInfo": {
       "latitude": -10.944963455200195,
       "longitude": -37.665557861328125,
-      "latSpeed": -0.0000026822463,
-      "lonSpeed": -0.0000010409641
+      "latSpeed": 7.815686e-9,
+      "lonSpeed": -3.4677043e-9
     }
   },
   {
@@ -709,8 +80,8 @@
     "kalmanInfo": {
       "latitude": -10.945063591003418,
       "longitude": -37.66566467285156,
-      "latSpeed": -8.221207e-7,
-      "lonSpeed": -0.0000025803784
+      "latSpeed": -0.0000034249167,
+      "lonSpeed": -0.0000036650488
     }
   },
   {
@@ -730,8 +101,8 @@
     "kalmanInfo": {
       "latitude": -10.94505786895752,
       "longitude": -37.665687561035156,
-      "latSpeed": 8.868258e-7,
-      "lonSpeed": 0.0000022658878
+      "latSpeed": 0.0000034942843,
+      "lonSpeed": 0.0000033436802
     }
   },
   {
@@ -751,8 +122,8 @@
     "kalmanInfo": {
       "latitude": -10.945060729980469,
       "longitude": -37.66566848754883,
-      "latSpeed": -9.4373183e-7,
-      "lonSpeed": -0.0000014594575
+      "latSpeed": -0.0000035678738,
+      "lonSpeed": -0.000002672232
     }
   },
   {
@@ -772,8 +143,8 @@
     "kalmanInfo": {
       "latitude": -10.945060729980469,
       "longitude": -37.66566848754883,
-      "latSpeed": 9.3970107e-7,
-      "lonSpeed": 0.000001447258
+      "latSpeed": 0.000003561329,
+      "lonSpeed": 0.0000026858327
     }
   },
   {
@@ -793,8 +164,8 @@
     "kalmanInfo": {
       "latitude": -10.944966316223145,
       "longitude": -37.66556167602539,
-      "latSpeed": 0.0000015669002,
-      "lonSpeed": 0.000001447258
+      "latSpeed": -0.0000010259716,
+      "lonSpeed": 1.5141245e-7
     }
   },
   {
@@ -814,8 +185,8 @@
     "kalmanInfo": {
       "latitude": -10.944957733154297,
       "longitude": -37.665550231933594,
-      "latSpeed": -0.0000014324089,
-      "lonSpeed": -0.0000012670489
+      "latSpeed": 0.000001151717,
+      "lonSpeed": -1.1914196e-8
     }
   },
   {
@@ -835,8 +206,8 @@
     "kalmanInfo": {
       "latitude": -10.921826362609863,
       "longitude": -37.67208480834961,
-      "latSpeed": 0.00025927334,
-      "lonSpeed": -0.000071599345
+      "latSpeed": 0.00025714765,
+      "lonSpeed": -0.000072937575
     }
   },
   {
@@ -856,8 +227,8 @@
     "kalmanInfo": {
       "latitude": -10.94509506225586,
       "longitude": -37.66560363769531,
-      "latSpeed": -0.00078393787,
-      "lonSpeed": 0.0002177582
+      "latSpeed": -0.00078941806,
+      "lonSpeed": 0.00022114522
     }
   },
   {
@@ -877,8 +248,8 @@
     "kalmanInfo": {
       "latitude": -10.945067405700684,
       "longitude": -37.6656608581543,
-      "latSpeed": 0.00077857485,
-      "lonSpeed": -0.00021697543
+      "latSpeed": 0.0007882949,
+      "lonSpeed": -0.00022152904
     }
   },
   {
@@ -898,8 +269,8 @@
     "kalmanInfo": {
       "latitude": -10.945066452026367,
       "longitude": -37.6656608581543,
-      "latSpeed": -0.0007750343,
-      "lonSpeed": 0.00021597772
+      "latSpeed": -0.0007873441,
+      "lonSpeed": 0.000221266
     }
   },
   {
@@ -919,8 +290,8 @@
     "kalmanInfo": {
       "latitude": -10.944966316223145,
       "longitude": -37.66556167602539,
-      "latSpeed": 0.0007430657,
-      "lonSpeed": -0.00020255611
+      "latSpeed": 0.00078113546,
+      "lonSpeed": -0.00021489759
     }
   },
   {
@@ -940,8 +311,8 @@
     "kalmanInfo": {
       "latitude": -10.944938659667969,
       "longitude": -37.66552734375,
-      "latSpeed": -0.00073752995,
-      "lonSpeed": 0.000201641
+      "latSpeed": -0.00077926164,
+      "lonSpeed": 0.00021497146
     }
   },
   {
@@ -961,8 +332,8 @@
     "kalmanInfo": {
       "latitude": -10.944991111755371,
       "longitude": -37.66557693481445,
-      "latSpeed": 0.0007338242,
-      "lonSpeed": -0.00020135328
+      "latSpeed": 0.0007777784,
+      "lonSpeed": -0.00021528866
     }
   },
   {
@@ -982,8 +353,8 @@
     "kalmanInfo": {
       "latitude": -10.945019721984863,
       "longitude": -37.665592193603516,
-      "latSpeed": -0.00070780294,
-      "lonSpeed": 0.00019345747
+      "latSpeed": -0.00077070884,
+      "lonSpeed": 0.00021253453
     }
   },
   {
@@ -1003,8 +374,8 @@
     "kalmanInfo": {
       "latitude": -10.945234298706055,
       "longitude": -37.66560363769531,
-      "latSpeed": 0.00069766387,
-      "lonSpeed": -0.0001918633
+      "latSpeed": 0.0007650819,
+      "lonSpeed": -0.00021216739
     }
   },
   {
@@ -1024,8 +395,8 @@
     "kalmanInfo": {
       "latitude": -10.94514274597168,
       "longitude": -37.665611267089844,
-      "latSpeed": -0.00069387304,
-      "lonSpeed": 0.00019103417
+      "latSpeed": -0.00076320994,
+      "lonSpeed": 0.00021184614
     }
   },
   {
@@ -1045,8 +416,8 @@
     "kalmanInfo": {
       "latitude": -10.945228576660156,
       "longitude": -37.66559982299805,
-      "latSpeed": 0.0006901362,
-      "lonSpeed": -0.00019013573
+      "latSpeed": 0.000761385,
+      "lonSpeed": -0.00021147064
     }
   },
   {
@@ -1066,8 +437,8 @@
     "kalmanInfo": {
       "latitude": -10.945239067077637,
       "longitude": -37.66560745239258,
-      "latSpeed": -0.0006874964,
-      "lonSpeed": 0.00018930281
+      "latSpeed": -0.00076063833,
+      "lonSpeed": 0.00021112655
     }
   },
   {
@@ -1087,8 +458,8 @@
     "kalmanInfo": {
       "latitude": -10.945230484008789,
       "longitude": -37.66559982299805,
-      "latSpeed": 0.00068482815,
-      "lonSpeed": -0.00018846421
+      "latSpeed": 0.00075985846,
+      "lonSpeed": -0.00021080475
     }
   },
   {
@@ -1108,8 +479,8 @@
     "kalmanInfo": {
       "latitude": -10.945096969604492,
       "longitude": -37.66561508178711,
-      "latSpeed": -0.0006540831,
-      "lonSpeed": 0.00018073668
+      "latSpeed": -0.00074668374,
+      "lonSpeed": 0.0002079232
     }
   },
   {
@@ -1129,8 +500,8 @@
     "kalmanInfo": {
       "latitude": -10.945049285888672,
       "longitude": -37.665679931640625,
-      "latSpeed": 0.000651001,
-      "lonSpeed": -0.00018059995
+      "latSpeed": 0.0007460707,
+      "lonSpeed": -0.00020843631
     }
   },
   {
@@ -1150,8 +521,8 @@
     "kalmanInfo": {
       "latitude": -10.945014953613281,
       "longitude": -37.66561508178711,
-      "latSpeed": -0.00063927716,
-      "lonSpeed": 0.00017906784
+      "latSpeed": -0.00074153795,
+      "lonSpeed": 0.00020887572
     }
   },
   {
@@ -1171,8 +542,8 @@
     "kalmanInfo": {
       "latitude": -10.945103645324707,
       "longitude": -37.66561508178711,
-      "latSpeed": 0.0006349232,
-      "lonSpeed": -0.00017817176
+      "latSpeed": 0.00073928357,
+      "lonSpeed": -0.00020855636
     }
   },
   {
@@ -1192,596 +563,8 @@
     "kalmanInfo": {
       "latitude": -10.944968223571777,
       "longitude": -37.66554641723633,
-      "latSpeed": -0.0006210469,
-      "lonSpeed": 0.00017676552
-    }
-  },
-  {
-    "receivedTime": "2022-08-23T17:00:46Z",
-    "serverTime": "2022-08-23T17:00:48Z",
-    "collectedTime": "2022-08-23T17:00:46Z",
-    "trackerId": 243197,
-    "accuracy": 122.77300262451172,
-    "lat": -10.944847,
-    "lon": -37.6659268,
-    "speed": 0.0,
-    "event": "",
-    "accStatus": null,
-    "battery": 61,
-    "imei": "351837111814844",
-    "alarmType": null,
-    "kalmanInfo": {
-      "latitude": -10.944847106933594,
-      "longitude": -37.66592788696289,
-      "latSpeed": 0.0006191222,
-      "lonSpeed": -0.0001810889
-    }
-  },
-  {
-    "receivedTime": "2022-08-23T17:03:44Z",
-    "serverTime": "2022-08-23T17:03:46Z",
-    "collectedTime": "2022-08-23T17:03:44Z",
-    "trackerId": 243197,
-    "accuracy": 17.062000274658203,
-    "lat": -10.9450947,
-    "lon": -37.6656184,
-    "speed": 0.0,
-    "event": "",
-    "accStatus": null,
-    "battery": 61,
-    "imei": "351837111814844",
-    "alarmType": null,
-    "kalmanInfo": {
-      "latitude": -10.94509506225586,
-      "longitude": -37.665618896484375,
-      "latSpeed": -0.0006196074,
-      "lonSpeed": 0.00018388696
-    }
-  },
-  {
-    "receivedTime": "2022-08-23T17:06:44Z",
-    "serverTime": "2022-08-23T17:06:46Z",
-    "collectedTime": "2022-08-23T17:06:44Z",
-    "trackerId": 243197,
-    "accuracy": 20.0,
-    "lat": -10.9450893,
-    "lon": -37.6656039,
-    "speed": 0.0,
-    "event": "",
-    "accStatus": null,
-    "battery": 62,
-    "imei": "351837111814844",
-    "alarmType": null,
-    "kalmanInfo": {
-      "latitude": -10.945089340209961,
-      "longitude": -37.66560363769531,
-      "latSpeed": 0.00061743276,
-      "lonSpeed": -0.0001830587
-    }
-  },
-  {
-    "receivedTime": "2022-08-23T17:07:42Z",
-    "serverTime": "2022-08-23T17:07:43Z",
-    "collectedTime": "2022-08-23T17:07:42Z",
-    "trackerId": 243197,
-    "accuracy": 20.0,
-    "lat": -10.9451083,
-    "lon": -37.6656176,
-    "speed": 0.0,
-    "event": "",
-    "accStatus": null,
-    "battery": 62,
-    "imei": "351837111814844",
-    "alarmType": null,
-    "kalmanInfo": {
-      "latitude": -10.945108413696289,
-      "longitude": -37.665618896484375,
-      "latSpeed": -0.000597327,
-      "lonSpeed": 0.000176348
-    }
-  },
-  {
-    "receivedTime": "2022-08-23T17:10:02Z",
-    "serverTime": "2022-08-23T17:10:03Z",
-    "collectedTime": "2022-08-23T17:10:02Z",
-    "trackerId": 243197,
-    "accuracy": 41.840999603271484,
-    "lat": -10.9449914,
-    "lon": -37.6655962,
-    "speed": 0.0,
-    "event": "",
-    "accStatus": null,
-    "battery": 62,
-    "imei": "351837111814844",
-    "alarmType": null,
-    "kalmanInfo": {
-      "latitude": -10.944991111755371,
-      "longitude": -37.66559600830078,
-      "latSpeed": 0.0005955702,
-      "lonSpeed": -0.00017500995
-    }
-  },
-  {
-    "receivedTime": "2022-08-23T17:11:42Z",
-    "serverTime": "2022-08-23T17:11:44Z",
-    "collectedTime": "2022-08-23T17:11:42Z",
-    "trackerId": 243197,
-    "accuracy": 20.0,
-    "lat": -10.9450838,
-    "lon": -37.665613,
-    "speed": 0.0,
-    "event": "",
-    "accStatus": null,
-    "battery": 62,
-    "imei": "351837111814844",
-    "alarmType": null,
-    "kalmanInfo": {
-      "latitude": -10.945083618164062,
-      "longitude": -37.665611267089844,
-      "latSpeed": -0.0005907839,
-      "lonSpeed": 0.00017277634
-    }
-  },
-  {
-    "receivedTime": "2022-08-23T17:14:14Z",
-    "serverTime": "2022-08-23T17:14:16Z",
-    "collectedTime": "2022-08-23T17:14:14Z",
-    "trackerId": 243197,
-    "accuracy": 15.45300006866455,
-    "lat": -10.9450832,
-    "lon": -37.6656226,
-    "speed": 0.0,
-    "event": "",
-    "accStatus": null,
-    "battery": 62,
-    "imei": "351837111814844",
-    "alarmType": null,
-    "kalmanInfo": {
-      "latitude": -10.945083618164062,
-      "longitude": -37.66562271118164,
-      "latSpeed": 0.0005879502,
-      "lonSpeed": -0.00017207733
-    }
-  },
-  {
-    "receivedTime": "2022-08-23T17:17:21Z",
-    "serverTime": "2022-08-23T17:17:22Z",
-    "collectedTime": "2022-08-23T17:17:21Z",
-    "trackerId": 243197,
-    "accuracy": 29.200000762939453,
-    "lat": -10.9450495,
-    "lon": -37.6656831,
-    "speed": 0.0,
-    "event": "",
-    "accStatus": null,
-    "battery": 63,
-    "imei": "351837111814844",
-    "alarmType": null,
-    "kalmanInfo": {
-      "latitude": -10.945049285888672,
-      "longitude": -37.66568374633789,
-      "latSpeed": -0.00058572344,
-      "lonSpeed": 0.00017086661
-    }
-  },
-  {
-    "receivedTime": "2022-08-23T17:19:21Z",
-    "serverTime": "2022-08-23T17:19:22Z",
-    "collectedTime": "2022-08-23T17:19:21Z",
-    "trackerId": 243197,
-    "accuracy": 27.17099952697754,
-    "lat": -10.945003,
-    "lon": -37.6656117,
-    "speed": 0.0,
-    "event": "",
-    "accStatus": null,
-    "battery": 63,
-    "imei": "351837111814844",
-    "alarmType": null,
-    "kalmanInfo": {
-      "latitude": -10.945002555847168,
-      "longitude": -37.665611267089844,
-      "latSpeed": 0.00058204425,
-      "lonSpeed": -0.00016836394
-    }
-  },
-  {
-    "receivedTime": "2022-08-23T17:21:42Z",
-    "serverTime": "2022-08-23T17:21:44Z",
-    "collectedTime": "2022-08-23T17:21:42Z",
-    "trackerId": 243197,
-    "accuracy": 238.39500427246094,
-    "lat": -10.945003,
-    "lon": -37.6656117,
-    "speed": 0.0,
-    "event": "",
-    "accStatus": null,
-    "battery": 63,
-    "imei": "351837111814844",
-    "alarmType": null,
-    "kalmanInfo": {
-      "latitude": -10.945002555847168,
-      "longitude": -37.665611267089844,
-      "latSpeed": -0.0005788589,
-      "lonSpeed": 0.00016743527
-    }
-  },
-  {
-    "receivedTime": "2022-08-23T17:24:41Z",
-    "serverTime": "2022-08-23T17:24:43Z",
-    "collectedTime": "2022-08-23T17:24:41Z",
-    "trackerId": 243197,
-    "accuracy": 24.323999404907227,
-    "lat": -10.9450494,
-    "lon": -37.6656809,
-    "speed": 0.0,
-    "event": "",
-    "accStatus": null,
-    "battery": 64,
-    "imei": "351837111814844",
-    "alarmType": null,
-    "kalmanInfo": {
-      "latitude": -10.945049285888672,
-      "longitude": -37.665679931640625,
-      "latSpeed": 0.00057637726,
-      "lonSpeed": -0.00016764703
-    }
-  },
-  {
-    "receivedTime": "2022-08-23T17:27:41Z",
-    "serverTime": "2022-08-23T17:27:43Z",
-    "collectedTime": "2022-08-23T17:27:41Z",
-    "trackerId": 243197,
-    "accuracy": 29.49799919128418,
-    "lat": -10.9450046,
-    "lon": -37.6656041,
-    "speed": 0.0,
-    "event": "",
-    "accStatus": null,
-    "battery": 64,
-    "imei": "351837111814844",
-    "alarmType": null,
-    "kalmanInfo": {
-      "latitude": -10.9450044631958,
-      "longitude": -37.66560363769531,
-      "latSpeed": -0.00057396106,
-      "lonSpeed": 0.0001679516
-    }
-  },
-  {
-    "receivedTime": "2022-08-23T17:30:45Z",
-    "serverTime": "2022-08-23T17:30:46Z",
-    "collectedTime": "2022-08-23T17:30:45Z",
-    "trackerId": 243197,
-    "accuracy": 28.235000610351562,
-    "lat": -10.9449987,
-    "lon": -37.6656054,
-    "speed": 0.0,
-    "event": "",
-    "accStatus": null,
-    "battery": 65,
-    "imei": "351837111814844",
-    "alarmType": null,
-    "kalmanInfo": {
-      "latitude": -10.944998741149902,
-      "longitude": -37.66560363769531,
-      "latSpeed": 0.0005721969,
-      "lonSpeed": -0.00016741434
-    }
-  },
-  {
-    "receivedTime": "2022-08-23T17:33:44Z",
-    "serverTime": "2022-08-23T17:33:45Z",
-    "collectedTime": "2022-08-23T17:33:44Z",
-    "trackerId": 243197,
-    "accuracy": 25.788000106811523,
-    "lat": -10.944992,
-    "lon": -37.6656132,
-    "speed": 0.0,
-    "event": "",
-    "accStatus": null,
-    "battery": 65,
-    "imei": "351837111814844",
-    "alarmType": null,
-    "kalmanInfo": {
-      "latitude": -10.944992065429688,
-      "longitude": -37.66561508178711,
-      "latSpeed": -0.00057020865,
-      "lonSpeed": 0.00016673759
-    }
-  },
-  {
-    "receivedTime": "2022-08-23T17:36:44Z",
-    "serverTime": "2022-08-23T17:36:45Z",
-    "collectedTime": "2022-08-23T17:36:44Z",
-    "trackerId": 243197,
-    "accuracy": 105.47000122070312,
-    "lat": -10.9449511,
-    "lon": -37.6652103,
-    "speed": 0.0,
-    "event": "",
-    "accStatus": null,
-    "battery": 66,
-    "imei": "351837111814844",
-    "alarmType": null,
-    "kalmanInfo": {
-      "latitude": -10.944951057434082,
-      "longitude": -37.66521072387695,
-      "latSpeed": 0.0005687763,
-      "lonSpeed": -0.00016171526
-    }
-  },
-  {
-    "receivedTime": "2022-08-23T17:37:38Z",
-    "serverTime": "2022-08-23T17:37:39Z",
-    "collectedTime": "2022-08-23T17:37:38Z",
-    "trackerId": 243197,
-    "accuracy": 32.641998291015625,
-    "lat": -10.9449712,
-    "lon": -37.6655701,
-    "speed": 0.0,
-    "event": "",
-    "accStatus": null,
-    "battery": 66,
-    "imei": "351837111814844",
-    "alarmType": null,
-    "kalmanInfo": {
-      "latitude": -10.944971084594727,
-      "longitude": -37.66556930541992,
-      "latSpeed": -0.00054935995,
-      "lonSpeed": 0.00014291241
-    }
-  },
-  {
-    "receivedTime": "2022-08-23T17:40:00Z",
-    "serverTime": "2022-08-23T17:40:02Z",
-    "collectedTime": "2022-08-23T17:40:00Z",
-    "trackerId": 243197,
-    "accuracy": 20.0,
-    "lat": -10.9450899,
-    "lon": -37.665616,
-    "speed": 0.0,
-    "event": "",
-    "accStatus": null,
-    "battery": 66,
-    "imei": "351837111814844",
-    "alarmType": null,
-    "kalmanInfo": {
-      "latitude": -10.945090293884277,
-      "longitude": -37.66561508178711,
-      "latSpeed": 0.00054487854,
-      "lonSpeed": -0.00014283587
-    }
-  },
-  {
-    "receivedTime": "2022-08-23T17:41:01Z",
-    "serverTime": "2022-08-23T17:41:02Z",
-    "collectedTime": "2022-08-23T17:41:01Z",
-    "trackerId": 243197,
-    "accuracy": 33.507999420166016,
-    "lat": -10.9449622,
-    "lon": -37.6655536,
-    "speed": 0.0,
-    "event": "",
-    "accStatus": null,
-    "battery": 66,
-    "imei": "351837111814844",
-    "alarmType": null,
-    "kalmanInfo": {
-      "latitude": -10.944962501525879,
-      "longitude": -37.66555404663086,
-      "latSpeed": -0.00052609015,
-      "lonSpeed": 0.00014096248
-    }
-  },
-  {
-    "receivedTime": "2022-08-23T17:43:27Z",
-    "serverTime": "2022-08-23T17:43:28Z",
-    "collectedTime": "2022-08-23T17:43:27Z",
-    "trackerId": 243197,
-    "accuracy": 26.000999450683594,
-    "lat": -10.9449859,
-    "lon": -37.665601,
-    "speed": 0.0,
-    "event": "",
-    "accStatus": null,
-    "battery": 67,
-    "imei": "351837111814844",
-    "alarmType": null,
-    "kalmanInfo": {
-      "latitude": -10.944986343383789,
-      "longitude": -37.66559982299805,
-      "latSpeed": 0.00052330294,
-      "lonSpeed": -0.00014092628
-    }
-  },
-  {
-    "receivedTime": "2022-08-23T17:45:27Z",
-    "serverTime": "2022-08-23T17:45:28Z",
-    "collectedTime": "2022-08-23T17:45:27Z",
-    "trackerId": 243197,
-    "accuracy": 20.0,
-    "lat": -10.9450903,
-    "lon": -37.6656257,
-    "speed": 0.0,
-    "event": "",
-    "accStatus": null,
-    "battery": 67,
-    "imei": "351837111814844",
-    "alarmType": null,
-    "kalmanInfo": {
-      "latitude": -10.945090293884277,
-      "longitude": -37.665626525878906,
-      "latSpeed": -0.00052143855,
-      "lonSpeed": 0.00013950467
-    }
-  },
-  {
-    "receivedTime": "2022-08-23T17:47:26Z",
-    "serverTime": "2022-08-23T17:47:29Z",
-    "collectedTime": "2022-08-23T17:47:26Z",
-    "trackerId": 243197,
-    "accuracy": 26.232999801635742,
-    "lat": -10.9450231,
-    "lon": -37.6656335,
-    "speed": 0.0,
-    "event": "",
-    "accStatus": null,
-    "battery": 68,
-    "imei": "351837111814844",
-    "alarmType": null,
-    "kalmanInfo": {
-      "latitude": -10.945023536682129,
-      "longitude": -37.66563415527344,
-      "latSpeed": 0.0005189332,
-      "lonSpeed": -0.00013867315
-    }
-  },
-  {
-    "receivedTime": "2022-08-23T17:49:48Z",
-    "serverTime": "2022-08-23T17:49:49Z",
-    "collectedTime": "2022-08-23T17:49:48Z",
-    "trackerId": 243197,
-    "accuracy": 18.902999877929688,
-    "lat": -10.9450924,
-    "lon": -37.6656032,
-    "speed": 0.0,
-    "event": "",
-    "accStatus": null,
-    "battery": 68,
-    "imei": "351837111814844",
-    "alarmType": null,
-    "kalmanInfo": {
-      "latitude": -10.94509220123291,
-      "longitude": -37.66560363769531,
-      "latSpeed": -0.00051738194,
-      "lonSpeed": 0.00013842792
-    }
-  },
-  {
-    "receivedTime": "2022-08-23T17:51:00Z",
-    "serverTime": "2022-08-23T17:51:02Z",
-    "collectedTime": "2022-08-23T17:51:00Z",
-    "trackerId": 243197,
-    "accuracy": 29.98200035095215,
-    "lat": -10.9450112,
-    "lon": -37.6656077,
-    "speed": 0.0,
-    "event": "",
-    "accStatus": null,
-    "battery": 68,
-    "imei": "351837111814844",
-    "alarmType": null,
-    "kalmanInfo": {
-      "latitude": -10.945011138916016,
-      "longitude": -37.66560745239258,
-      "latSpeed": 0.00051003357,
-      "lonSpeed": -0.00013599746
-    }
-  },
-  {
-    "receivedTime": "2022-08-23T17:53:00Z",
-    "serverTime": "2022-08-23T17:53:02Z",
-    "collectedTime": "2022-08-23T17:53:00Z",
-    "trackerId": 243197,
-    "accuracy": 34.4640007019043,
-    "lat": -10.9449679,
-    "lon": -37.6655628,
-    "speed": 0.0,
-    "event": "",
-    "accStatus": null,
-    "battery": 69,
-    "imei": "351837111814844",
-    "alarmType": null,
-    "kalmanInfo": {
-      "latitude": -10.944968223571777,
-      "longitude": -37.66556167602539,
-      "latSpeed": -0.0005059424,
-      "lonSpeed": 0.0001358504
-    }
-  },
-  {
-    "receivedTime": "2022-08-23T17:54:26Z",
-    "serverTime": "2022-08-23T17:54:27Z",
-    "collectedTime": "2022-08-23T17:54:26Z",
-    "trackerId": 243197,
-    "accuracy": 33.667999267578125,
-    "lat": -10.9449729,
-    "lon": -37.6655707,
-    "speed": 0.0,
-    "event": "",
-    "accStatus": null,
-    "battery": 69,
-    "imei": "351837111814844",
-    "alarmType": null,
-    "kalmanInfo": {
-      "latitude": -10.94497299194336,
-      "longitude": -37.66556930541992,
-      "latSpeed": 0.0004994025,
-      "lonSpeed": -0.0001343278
-    }
-  },
-  {
-    "receivedTime": "2022-08-23T17:56:46Z",
-    "serverTime": "2022-08-23T17:56:47Z",
-    "collectedTime": "2022-08-23T17:56:46Z",
-    "trackerId": 243197,
-    "accuracy": 24.323999404907227,
-    "lat": -10.9450494,
-    "lon": -37.6656809,
-    "speed": 0.0,
-    "event": "",
-    "accStatus": null,
-    "battery": 70,
-    "imei": "351837111814844",
-    "alarmType": null,
-    "kalmanInfo": {
-      "latitude": -10.945049285888672,
-      "longitude": -37.665679931640625,
-      "latSpeed": -0.00049810903,
-      "lonSpeed": 0.00013211748
-    }
-  },
-  {
-    "receivedTime": "2022-08-23T17:58:46Z",
-    "serverTime": "2022-08-23T17:58:47Z",
-    "collectedTime": "2022-08-23T17:58:46Z",
-    "trackerId": 243197,
-    "accuracy": 34.71500015258789,
-    "lat": -10.9449762,
-    "lon": -37.665553,
-    "speed": 0.0,
-    "event": "",
-    "accStatus": null,
-    "battery": 71,
-    "imei": "351837111814844",
-    "alarmType": null,
-    "kalmanInfo": {
-      "latitude": -10.944975852966309,
-      "longitude": -37.66555404663086,
-      "latSpeed": 0.0004961166,
-      "lonSpeed": -0.00012916897
-    }
-  },
-  {
-    "receivedTime": "2022-08-23T18:01:06Z",
-    "serverTime": "2022-08-23T18:01:08Z",
-    "collectedTime": "2022-08-23T18:01:06Z",
-    "trackerId": 243197,
-    "accuracy": 38.30500030517578,
-    "lat": -10.9450535,
-    "lon": -37.665676,
-    "speed": 0.0,
-    "event": "",
-    "accStatus": null,
-    "battery": 71,
-    "imei": "351837111814844",
-    "alarmType": null,
-    "kalmanInfo": {
-      "latitude": -10.945053100585938,
-      "longitude": -37.66567611694336,
-      "latSpeed": -0.0004948706,
-      "lonSpeed": 0.000126845
+      "latSpeed": -0.0007322919,
+      "lonSpeed": 0.00020908532
     }
   }
 ]
