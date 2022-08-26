@@ -19,13 +19,21 @@ fn kalman_filter(coordinates: KalmanCoordinates) {
         },
         initial_uncertainty,
     )
-    .uncertainty_increase_multiplier(10000f32)
+    .uncertainty_increase_multiplier(10f32)
+    .epsilon_threshold(1f32)
     .build();
 
+    let mut count = 0;
     for coordinate in coordinates[1..].into_iter() {
+        count += 1;
         let elapsed_time = coordinate.received_time - last_time;
         last_time = coordinate.received_time;
         kalman_filter.predict(elapsed_time.num_seconds() as f32, acc_std);
+        println!(
+            "{count} - {} - id {}",
+            coordinate.received_time, coordinate.tracker_id
+        );
+        println!("state {:#?}\n", kalman_filter.state());
 
         let coordinate = geo::Coordinate {
             x: coordinate.lon as f32,

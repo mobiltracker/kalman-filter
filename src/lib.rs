@@ -1,11 +1,14 @@
+use proj;
+use std::fmt::Debug;
+
 use nalgebra::{Matrix2, Matrix2x4, Matrix4, Matrix4x2, SMatrix, SVector};
 
 const DIMENSIONS: usize = 4;
 const UNCERTAINTY_INCREASE_DEFAULT: f32 = 1f32;
-const EPSILON_THRESHOLD_DEFAULT: f32 = 0.0000009f32;
-pub const ACCELERATION_STD_DEFAULT: f32 = 0.000001f32;
-pub const POSITION_STD_DEFAULT: f32 = 0.0001f32;
-pub const INITIAL_UNCERTAINTY_DEFAULT: f32 = 0.0001f32;
+const EPSILON_THRESHOLD_DEFAULT: f32 = 1f32;
+pub const ACCELERATION_STD_DEFAULT: f32 = 0.1f32;
+pub const POSITION_STD_DEFAULT: f32 = 20f32;
+pub const INITIAL_UNCERTAINTY_DEFAULT: f32 = 20f32;
 pub const TIME_STEP_DEFAULT: f32 = 1f32;
 
 pub struct KalmanFilterBuilder {
@@ -31,7 +34,9 @@ impl KalmanFilterBuilder {
     }
 
     pub fn build(self) -> KalmanFilter {
-        let state = SVector::from([self.coordinate.x, self.coordinate.y, 0f32, 0f32]);
+        let transf = proj::Proj::new_known_crs("EPSG:4326", "EPSG:31978", None).unwrap();
+        let coordinate = transf.convert(self.coordinate).unwrap();
+        let state = SVector::from([coordinate.x, coordinate.y, 0f32, 0f32]);
         let covariance = Matrix4::from_diagonal_element(self.initial_uncertainty);
 
         KalmanFilter {
@@ -41,6 +46,7 @@ impl KalmanFilterBuilder {
                 .uncertainty_increase_multiplier
                 .unwrap_or(UNCERTAINTY_INCREASE_DEFAULT),
             epsilon_threshold: self.epsilon_threshold.unwrap_or(EPSILON_THRESHOLD_DEFAULT),
+            epsilon: 0f32,
             count: 0,
         }
     }
@@ -51,6 +57,7 @@ pub struct KalmanFilter {
     covariance: SMatrix<f32, DIMENSIONS, DIMENSIONS>,
     uncertainty_increase_mult: f32,
     epsilon_threshold: f32,
+    epsilon: f32,
     count: u32,
 }
 
@@ -58,8 +65,8 @@ pub struct KalmanFilter {
 pub struct KalmanState {
     pub longitude: f32,
     pub latitude: f32,
-    pub lon_speed: f32,
-    pub lat_speed: f32,
+    pub speed: f32,
+    pub epsilon: f32,
 }
 
 impl KalmanFilter {
@@ -76,6 +83,8 @@ impl KalmanFilter {
     }
 
     pub fn update(&mut self, measurement: geo::Coordinate<f32>, position_std: f32) {
+        let converter = proj::Proj::new_known_crs("EPSG:4326", "EPSG:31978", None).unwrap();
+        let measurement = converter.convert(measurement).unwrap();
         let measurement = SVector::from([measurement.x, measurement.y]);
 
         let observation_model = Matrix2x4::from_diagonal_element(1f32);
@@ -100,8 +109,9 @@ impl KalmanFilter {
         self.covariance = (identity - kalman_gain * observation_model) * self.covariance;
 
         let epsilon = residual.transpose() * inovation_covariance * residual;
+        self.epsilon = epsilon.x;
 
-        if epsilon.x > self.epsilon_threshold {
+        if self.epsilon > self.epsilon_threshold {
             self.covariance *= self.uncertainty_increase_mult;
             self.count += 1;
         } else if self.count > 0 {
@@ -138,11 +148,27 @@ impl KalmanFilter {
     }
 
     pub fn state(&self) -> KalmanState {
+        let converter = proj::Proj::new_known_crs("EPSG:31978", "EPSG:4326", None).unwrap();
+        let coordinate = geo::Coordinate::<f32> {
+            x: self.state[0],
+            y: self.state[1],
+        };
+        let coordinate = converter.convert(coordinate).unwrap();
         KalmanState {
-            longitude: self.state[0],
-            latitude: self.state[1],
-            lon_speed: self.state[2],
-            lat_speed: self.state[3],
+            longitude: coordinate.x,
+            latitude: coordinate.y,
+            speed: self.speed(),
+            epsilon: self.epsilon,
         }
+    }
+
+    fn speed(&self) -> f32 {
+        let vx = self.state[2];
+        let vy = self.state[3];
+
+        let ms_to_kh = 3.6f32;
+        let speed = (vx.powf(2f32) + vy.powf(2f32)).sqrt() * ms_to_kh;
+
+        speed
     }
 }

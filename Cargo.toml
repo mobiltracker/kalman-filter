@@ -1,6 +1,6 @@
 [package]
 name = "kalman-filter"
-version = "0.1.1"
+version = "0.2.0"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
@@ -8,6 +8,10 @@ edition = "2021"
 [dependencies]
 nalgebra = "0.31"
 geo = "0.22"
+
+[dependencies.proj]
+features = ["bundled_proj"]
+version = "0.27.0"
 
 [dev-dependencies.serde_json]
 version = "1.0"
@@ -19,3 +23,4 @@ version = "0.4"
 [dev-dependencies.serde]
 features = ["derive"]
 version = "1"
+
