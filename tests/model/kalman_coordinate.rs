@@ -26,8 +26,8 @@ pub struct KalmanCoordinate {
 pub struct KalmanInfo {
     latitude: f64,
     longitude: f64,
-    lat_speed: f32,
-    lon_speed: f32,
+    speed: f32,
+    epsilon: f32,
 }
 
 #[derive(Serialize, Deserialize)]
